@@ -38,7 +38,7 @@ class BeachTableViewController: UITableViewController {
         let spotID = spotIDList[indexPath.row]
         
         let cell = self.beachTableView.dequeueReusableCell(withIdentifier: "beach_cell") as! BeachCell
-        cell.populate(beach: beach, spotID: spotID, /*county: self.county, */ navController: self.navigationController!)
+        cell.populate(beach: beach, spotID: spotID, navController: self.navigationController!)
 
         cell.titleLabel.text = beach
         
@@ -59,10 +59,9 @@ class BeachTableViewController: UITableViewController {
     }
     
     
-    
-    
     override func viewDidAppear(_ animated: Bool) {
         self.beachTableView.reloadData()
+        getBeaches()
     }
 
     private func getBeaches(){
@@ -84,8 +83,6 @@ class BeachTableViewController: UITableViewController {
             let json = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
             
             var beachDict = json as! [[String : AnyObject]]
-
-            
             
             for i in 0 ..< beachDict.count
             {
@@ -97,11 +94,11 @@ class BeachTableViewController: UITableViewController {
                         
                         self.beachList += [(beachDict[i]["spot_name"] as! String)]
                         self.spotIDList += [(beachDict[i]["spot_id"] as! Int)]
-                        print(self.spotIDList)
-                    }
+                                            }
                 }
             }
         }
+        print(self.spotIDList)
         beachTask.resume()
     }
 

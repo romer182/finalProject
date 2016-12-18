@@ -33,17 +33,69 @@ class ConditionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        getSize()
         
         spotName.text = beach
         image.image = #imageLiteral(resourceName: "waves")
         
-        print(spotID, "didselectrow")
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
+    
+    
+    private func getSize(){
+        
+        //http://api.spitcast.com/api/spot/forecast/1/
+        let baseUrl = "http://api.spitcast.com/api"
+        let method = "/spot/forecast/"
+        let county = String(self.spotID)
+        
+        
+        let fullUrl = "\(baseUrl)\(method)\(county)/"
+        let url = URL(string: fullUrl)!
+        
+        let sizeTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let e = error
+            {
+                print("error: ", e)
+                return
+            }
+            let json = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+            var sizeDict = json as! [[String : AnyObject]]
+            
+            print(sizeDict)
+            
+            for i in 0 ..< sizeDict.count
+            {
+                let sizeList = [(sizeDict[i]["size"] as! Int)]
+                
+                for size in sizeList{
+                        self.surfHeight.text = String(size)
+                }
+                
+                let shapeList = [(sizeDict[i]["shape_full"] as! String)]
+                
+                for shape in shapeList{
+                    self.shape.text = shape
+                }
+                
+                let dateList = [(sizeDict[i]["date"] as! String)]
+                
+                for date in dateList{
+                    self.windSpeed.text = date
+                }
+                
+            }
+        }
+        sizeTask.resume()
+    }
+
+
+    
     
     private func getWind(){
         
@@ -94,39 +146,10 @@ class ConditionsViewController: UIViewController {
             {
                 let tideFT = [(tideDict[i]["tide"] as! String)]
                 print(tideFT)
-
+                
             }
         }
         tideTask.resume()
     }
-    
-    private func getSize(){
-        
-        let baseUrl = "http://api.spitcast.com/api"
-        let method = "/spot/forecast/"
-        let county = "\(self.spotID)/"
-        
-        let fullUrl = "\(baseUrl)\(method)\(county)"
-        let url = URL(string: fullUrl)!
-        
-        let sizeTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let e = error
-            {
-                print("error: ", e)
-                return
-            }
-            let json = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-            var sizeDict = json as! [[String : AnyObject]]
-            for i in 0 ..< sizeDict.count
-            {
-                let size = [(sizeDict[i]["size"] as! String)]
-                print(size)
-                let shape = [(sizeDict[i]["shape_full"] as! String)]
-                print(shape)
-            }
-        }
-        sizeTask.resume()
-    }
-
 
 }

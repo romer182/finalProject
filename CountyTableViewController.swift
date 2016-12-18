@@ -65,6 +65,7 @@ class CountyTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         self.countyTableView.reloadData()
+        loadCounties()
     }
     
     
