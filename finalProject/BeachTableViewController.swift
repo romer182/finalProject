@@ -94,26 +94,18 @@ class BeachTableViewController: UITableViewController {
                         
                         self.beachList += [(beachDict[i]["spot_name"] as! String)]
                         self.spotIDList += [(beachDict[i]["spot_id"] as! Int)]
-                                            }
+                        }
                 }
             }
         }
-        print(self.spotIDList)
         beachTask.resume()
     }
+    
+    
+    
 
 }
- 
- /*
- let beach = Beach()
- beach.spot_name = (beachDict[i]["spot_name"] as! String)
- self.beachList.append(beach)
- print(self.beachList)
- 
- print(beachDict[0]["spot_name"] as! String)   //prints first beach in json
- 
- print(self.county) //prints selected county
- */
+
 
 
 

@@ -14,6 +14,8 @@ class ConditionsViewController: UIViewController {
     
     @IBOutlet weak var surfHeight: UILabel!
     
+    @IBOutlet weak var date: UILabel!
+    
     @IBOutlet weak var tide: UILabel!
     
     @IBOutlet weak var windDirection: UILabel!
@@ -25,10 +27,9 @@ class ConditionsViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     
     var beach : String!
-    
     var county : String!
-    
     var spotID : Int!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,6 @@ class ConditionsViewController: UIViewController {
         
         spotName.text = beach
         image.image = #imageLiteral(resourceName: "waves")
-        
         
     }
 
@@ -86,7 +86,7 @@ class ConditionsViewController: UIViewController {
                 let dateList = [(sizeDict[i]["date"] as! String)]
                 
                 for date in dateList{
-                    self.windSpeed.text = date
+                    self.date.text = date
                 }
                 
             }
@@ -94,62 +94,6 @@ class ConditionsViewController: UIViewController {
         sizeTask.resume()
     }
 
-
     
     
-    private func getWind(){
-        
-        let baseUrl = "http://api.spitcast.com/api"
-        let method = "/county/wind/"
-        let county = "\(self.county)/"
-        
-        let fullUrl = "\(baseUrl)\(method)\(county)"
-        let url = URL(string: fullUrl)!
-        
-        let windTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let e = error
-            {
-                print("error: ", e)
-                return
-            }
-            let json = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-            var windDict = json as! [[String : AnyObject]]
-            for i in 0 ..< windDict.count
-            {
-                let windSpeed = [(windDict[i]["speed_mph"] as! String)]
-                print(windSpeed)
-                let windDirection = [(windDict[i]["direction_text"] as! String)]
-                print(windDirection)
-            }
-        }
-        windTask.resume()
-    }
-    
-    private func getTide(){
-        
-        let baseUrl = "http://api.spitcast.com/api"
-        let method = "/county/tide/"
-        let county = "\(self.county)/"
-        
-        let fullUrl = "\(baseUrl)\(method)\(county)"
-        let url = URL(string: fullUrl)!
-        
-        let tideTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let e = error
-            {
-                print("error: ", e)
-                return
-            }
-            let json = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-            var tideDict = json as! [[String : AnyObject]]
-            for i in 0 ..< tideDict.count
-            {
-                let tideFT = [(tideDict[i]["tide"] as! String)]
-                print(tideFT)
-                
-            }
-        }
-        tideTask.resume()
-    }
-
 }
