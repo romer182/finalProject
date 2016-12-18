@@ -12,6 +12,7 @@ class BeachTableViewController: UITableViewController {
     
     @IBOutlet var beachTableView: UITableView!
     var beachList = [String]()
+    var spotIDList = [Int]()
     
     var county : String!
     
@@ -34,11 +35,13 @@ class BeachTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let beach = beachList[indexPath.row]
+        let spotID = spotIDList[indexPath.row]
         
         let cell = self.beachTableView.dequeueReusableCell(withIdentifier: "beach_cell") as! BeachCell
-        cell.populate(beach: beach, navController: self.navigationController!)
+        cell.populate(beach: beach, spotID: spotID, /*county: self.county, */ navController: self.navigationController!)
 
         cell.titleLabel.text = beach
+        
 
         return cell
     }
@@ -50,6 +53,8 @@ class BeachTableViewController: UITableViewController {
         
         beachVC.beach = beachList[indexPath.row]//beach at that position
         
+        beachVC.spotID = spotIDList[indexPath.row]
+            
         self.navigationController!.pushViewController(beachVC, animated: true)
     }
     
@@ -91,7 +96,8 @@ class BeachTableViewController: UITableViewController {
                     if county == self.county{
                         
                         self.beachList += [(beachDict[i]["spot_name"] as! String)]
-
+                        self.spotIDList += [(beachDict[i]["spot_id"] as! Int)]
+                        print(self.spotIDList)
                     }
                 }
             }

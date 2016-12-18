@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D0EA0101DFE3605003CB48F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0EA00F1DFE3605003CB48F /* Default-568h@2x.png */; };
 		6D0EA0121DFE37A8003CB48F /* BeachTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0EA0111DFE37A8003CB48F /* BeachTableViewController.swift */; };
 		6D0EA0171DFE6308003CB48F /* CountyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0EA0151DFE6308003CB48F /* CountyCell.swift */; };
 		6D0EA0181DFE6308003CB48F /* CountyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0EA0161DFE6308003CB48F /* CountyCell.xib */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D0EA00F1DFE3605003CB48F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6D0EA0111DFE37A8003CB48F /* BeachTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachTableViewController.swift; sourceTree = "<group>"; };
 		6D0EA0151DFE6308003CB48F /* CountyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyCell.swift; sourceTree = "<group>"; };
 		6D0EA0161DFE6308003CB48F /* CountyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountyCell.xib; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		6D1C5A041DF5031F000DCB6F = {
 			isa = PBXGroup;
 			children = (
-				6D0EA00F1DFE3605003CB48F /* Default-568h@2x.png */,
 				6D1C5A0F1DF5031F000DCB6F /* finalProject */,
 				6D1C5A0E1DF5031F000DCB6F /* Products */,
 			);
@@ -150,7 +147,6 @@
 				6D1C5A1B1DF5031F000DCB6F /* LaunchScreen.storyboard in Resources */,
 				6D0EA01C1DFE6A55003CB48F /* BeachCell.xib in Resources */,
 				6D0EA0181DFE6308003CB48F /* CountyCell.xib in Resources */,
-				6D0EA0101DFE3605003CB48F /* Default-568h@2x.png in Resources */,
 				6D1C5A181DF5031F000DCB6F /* Assets.xcassets in Resources */,
 				6D1C5A161DF5031F000DCB6F /* Main.storyboard in Resources */,
 			);

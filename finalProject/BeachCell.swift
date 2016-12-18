@@ -12,6 +12,8 @@ class BeachCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
     var beach : String!
+    var spotID : Int!
+    //var county : String!
     var navController : UINavigationController!
     
     override func awakeFromNib() {
@@ -19,11 +21,14 @@ class BeachCell: UITableViewCell {
         
     }
     
-    func populate(beach: String, navController: UINavigationController){
+    func populate(beach: String, spotID: Int, /*county: String, */navController: UINavigationController){
         
         self.beach = beach
         self.navController = navController
         self.titleLabel.text = beach
+        self.spotID = spotID
+        //self.county = county
+        
         
     }
     

@@ -60,6 +60,7 @@ class CountyTableViewController: UITableViewController {
         self.navigationController!.pushViewController(countyVC, animated: true)
         
         
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -68,77 +68,83 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONDITIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kU7-T5-W5f">
-                                <rect key="frame" x="88.5" y="64" width="199" height="50.5"/>
+                                <rect key="frame" x="88" y="64" width="199" height="51"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.67069777399999997" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spot Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6w-MW-cpg">
-                                <rect key="frame" x="123.5" y="115" width="128" height="35"/>
+                                <rect key="frame" x="124" y="115" width="128" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surf Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-4f-5Cg">
-                                <rect key="frame" x="16" y="170" width="132" height="35"/>
+                                <rect key="frame" x="16" y="160" width="132" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.67069777399999997" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tide:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vd-jH-lU1">
-                                <rect key="frame" x="16" y="213" width="51.5" height="35"/>
+                                <rect key="frame" x="16" y="203" width="52" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.67069777399999997" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Direction:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPx-di-5AA">
-                                <rect key="frame" x="16" y="256" width="171.5" height="35"/>
+                                <rect key="frame" x="16" y="246" width="172" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.67069777399999997" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xf9-3s-5Oe">
-                                <rect key="frame" x="16" y="299" width="137.5" height="35"/>
+                                <rect key="frame" x="16" y="289" width="138" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.67069777399999997" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Temperature:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xda-3W-3vb">
-                                <rect key="frame" x="16" y="342" width="221" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shape:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xda-3W-3vb">
+                                <rect key="frame" x="16" y="332" width="73" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.67069777399999997" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOe-PT-ehO">
-                                <rect key="frame" x="75" y="213" width="60" height="35"/>
+                                <rect key="frame" x="76" y="203" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmc-Ba-g3b">
-                                <rect key="frame" x="195.5" y="256" width="60" height="35"/>
+                                <rect key="frame" x="196" y="246" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCx-2y-TPe">
-                                <rect key="frame" x="161" y="299" width="60" height="35"/>
+                                <rect key="frame" x="162" y="289" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p5-HO-fM1">
-                                <rect key="frame" x="245" y="343" width="60" height="35"/>
+                                <rect key="frame" x="97" y="333" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6F-eU-Vki">
-                                <rect key="frame" x="156" y="170" width="60" height="35"/>
+                                <rect key="frame" x="156" y="160" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bnR-Ik-9wM">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="RSE-2w-Dml"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -149,14 +155,19 @@
                             <constraint firstItem="Xda-3W-3vb" firstAttribute="top" secondItem="xf9-3s-5Oe" secondAttribute="bottom" constant="8" id="9lR-PW-vPR"/>
                             <constraint firstItem="pOe-PT-ehO" firstAttribute="leading" secondItem="5Vd-jH-lU1" secondAttribute="trailing" constant="8" id="DHg-id-Soe"/>
                             <constraint firstItem="DGq-4f-5Cg" firstAttribute="leading" secondItem="gpC-L2-kk0" secondAttribute="leadingMargin" id="DPG-AL-DLX"/>
-                            <constraint firstItem="i6F-eU-Vki" firstAttribute="top" secondItem="B6w-MW-cpg" secondAttribute="bottom" constant="20" id="EWR-0l-iHA"/>
+                            <constraint firstItem="i6F-eU-Vki" firstAttribute="top" secondItem="B6w-MW-cpg" secondAttribute="bottom" constant="10" id="EWR-0l-iHA"/>
                             <constraint firstItem="xf9-3s-5Oe" firstAttribute="top" secondItem="wPx-di-5AA" secondAttribute="bottom" constant="8" id="G5a-by-mQI"/>
+                            <constraint firstItem="GKh-rw-iOo" firstAttribute="top" secondItem="bnR-Ik-9wM" secondAttribute="bottom" id="HpC-jr-Nmi"/>
+                            <constraint firstItem="GKh-rw-iOo" firstAttribute="top" secondItem="bnR-Ik-9wM" secondAttribute="bottom" id="LGa-oD-guB"/>
                             <constraint firstItem="YCx-2y-TPe" firstAttribute="top" secondItem="Dmc-Ba-g3b" secondAttribute="bottom" constant="8" id="Log-Qi-6kQ"/>
                             <constraint firstItem="YCx-2y-TPe" firstAttribute="leading" secondItem="xf9-3s-5Oe" secondAttribute="trailing" constant="8" id="P21-iZ-All"/>
                             <constraint firstItem="Dmc-Ba-g3b" firstAttribute="top" secondItem="pOe-PT-ehO" secondAttribute="bottom" constant="8" id="Q0O-27-nxy"/>
-                            <constraint firstItem="DGq-4f-5Cg" firstAttribute="top" secondItem="B6w-MW-cpg" secondAttribute="bottom" constant="20" id="SB8-X2-vzr"/>
+                            <constraint firstItem="bnR-Ik-9wM" firstAttribute="leading" secondItem="gpC-L2-kk0" secondAttribute="leading" id="RY4-se-Ly2"/>
+                            <constraint firstItem="DGq-4f-5Cg" firstAttribute="top" secondItem="B6w-MW-cpg" secondAttribute="bottom" constant="10" id="SB8-X2-vzr"/>
                             <constraint firstItem="pOe-PT-ehO" firstAttribute="top" secondItem="i6F-eU-Vki" secondAttribute="bottom" constant="8" id="Sru-Hf-cEs"/>
                             <constraint firstItem="Xda-3W-3vb" firstAttribute="leading" secondItem="gpC-L2-kk0" secondAttribute="leadingMargin" id="bdz-t9-oGq"/>
+                            <constraint firstItem="bnR-Ik-9wM" firstAttribute="centerX" secondItem="gpC-L2-kk0" secondAttribute="centerX" id="eam-4B-9mN"/>
+                            <constraint firstAttribute="trailing" secondItem="bnR-Ik-9wM" secondAttribute="trailing" id="ekH-ka-GFu"/>
                             <constraint firstItem="5Vd-jH-lU1" firstAttribute="leading" secondItem="gpC-L2-kk0" secondAttribute="leadingMargin" id="g4p-sf-hOc"/>
                             <constraint firstItem="wPx-di-5AA" firstAttribute="leading" secondItem="gpC-L2-kk0" secondAttribute="leadingMargin" id="hS8-Wk-kEr"/>
                             <constraint firstItem="i6F-eU-Vki" firstAttribute="leading" secondItem="DGq-4f-5Cg" secondAttribute="trailing" constant="8" id="k4O-mj-nAf"/>
@@ -169,10 +180,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="image" destination="bnR-Ik-9wM" id="UAJ-Vj-209"/>
+                        <outlet property="shape" destination="6p5-HO-fM1" id="QkB-4w-38n"/>
                         <outlet property="spotName" destination="B6w-MW-cpg" id="HGa-yx-XEt"/>
                         <outlet property="surfHeight" destination="i6F-eU-Vki" id="gjn-Kk-TAh"/>
                         <outlet property="tide" destination="pOe-PT-ehO" id="dV5-d7-VXp"/>
-                        <outlet property="waterTemp" destination="6p5-HO-fM1" id="Z6b-Ie-WJs"/>
                         <outlet property="windDirection" destination="Dmc-Ba-g3b" id="qh0-qE-B1D"/>
                         <outlet property="windSpeed" destination="YCx-2y-TPe" id="I5k-Tn-YUs"/>
                     </connections>
