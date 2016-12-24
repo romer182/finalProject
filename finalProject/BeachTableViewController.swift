@@ -56,13 +56,19 @@ class BeachTableViewController: UITableViewController {
         beachVC.spotID = spotIDList[indexPath.row]
             
         self.navigationController!.pushViewController(beachVC, animated: true)
-    }
+        /*
+        let county = self.county
+        let destinationVC = BeachTableViewController()
+        destinationVC.county = county
+        destinationVC.performSegue(withIdentifier: "segueToConditions", sender: self)*/
+        }
     
     
     override func viewDidAppear(_ animated: Bool) {
         self.beachTableView.reloadData()
         getBeaches()
-    }
+        
+        }
 
     private func getBeaches(){
         
@@ -100,8 +106,6 @@ class BeachTableViewController: UITableViewController {
         }
         beachTask.resume()
     }
-    
-    
     
 
 }

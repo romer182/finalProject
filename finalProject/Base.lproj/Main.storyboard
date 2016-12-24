@@ -26,7 +26,7 @@
                     <navigationItem key="navigationItem" id="GBe-NV-w2U"/>
                     <connections>
                         <outlet property="countyTableView" destination="2qZ-ew-icF" id="YUp-6q-uAt"/>
-                        <segue destination="FUh-Gm-dzn" kind="show" identifier="segue" id="P1i-cu-4SA"/>
+                        <segue destination="FUh-Gm-dzn" kind="show" identifier="segueToBeachs" id="P1i-cu-4SA"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYr-NU-yuo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -48,7 +48,7 @@
                     </tableView>
                     <connections>
                         <outlet property="beachTableView" destination="d2F-c0-tIh" id="sFI-Jv-8lG"/>
-                        <segue destination="0LW-Uv-5Q2" kind="show" identifier="segue" id="f0w-06-V1i"/>
+                        <segue destination="0LW-Uv-5Q2" kind="show" identifier="segueToConditions" id="f0w-06-V1i"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAE-fu-RdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,6 +169,7 @@
                             <constraint firstItem="B6w-MW-cpg" firstAttribute="centerX" secondItem="gpC-L2-kk0" secondAttribute="centerX" id="zUP-wA-9iZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pVB-40-PuT"/>
                     <connections>
                         <outlet property="date" destination="YCx-2y-TPe" id="NCj-Hf-cfY"/>
                         <outlet property="image" destination="bnR-Ik-9wM" id="UAJ-Vj-209"/>

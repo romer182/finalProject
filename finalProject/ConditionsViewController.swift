@@ -35,6 +35,7 @@ class ConditionsViewController: UIViewController {
         super.viewDidLoad()
     
         getSize()
+        //print(county, "countyfromit")
         
         spotName.text = beach
         image.image = #imageLiteral(resourceName: "waves")
@@ -64,6 +65,7 @@ class ConditionsViewController: UIViewController {
                 print("error: ", e)
                 return
             }
+            
             let json = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
             var sizeDict = json as! [[String : AnyObject]]
             
@@ -88,6 +90,15 @@ class ConditionsViewController: UIViewController {
                 for date in dateList{
                     self.date.text = date
                 }
+                
+                //let shapeDetail = [[(sizeDict[i]["shape_detail"] as! String)]]
+                
+
+                
+                
+                
+
+
                 
             }
         }
